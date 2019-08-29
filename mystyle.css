@@ -1,0 +1,336 @@
+*{
+	
+	margin:0;
+	box-sizing: border-box;
+}
+.box100pt{
+	float:left;
+	width: 100%;
+}
+
+.boxcenter{
+	width: 1180px;
+	margin : 0 auto;
+}
+.logo {
+	float: left;
+	width: 25%;
+}
+.mt {
+	margin-top: 20px;
+}
+.mb{
+	margin-bottom: 20px;
+}
+.pdtb{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.bd{
+	border-bottom: 1px #ccc solid;
+}
+.banner{
+	float: left;
+	width: 670px;
+	position: relative;
+	overflow: hidden;
+}
+.banner img{
+	width: 100%;
+	height: 362px;
+} 
+.boxnew{    
+		 float: left;     
+		width: 250px;    
+		position: relative; 
+		overflow: hidden;
+}
+.boxnew img{    
+ 	width: 100%;     
+ 	height: 175px;
+}
+.cachnhephai{
+	margin-right:5px;
+}
+.cachnhebot{
+	margin-bottom: 5px;
+}
+.title{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient( to bottom , rgba(0,0,0,0.01),black);
+	padding: 5%;
+}
+.boxnew a{
+	text-decoration: none;
+	color: white;
+	font-size: 11pt;
+	font-family: Arial ;
+}
+.boxnew a:hover{
+	text-decoration: none;
+	color: blue;
+	font-size: 10pt;
+	font-family: Arial ;
+}
+.overplay{
+	position: absolute;
+	width: 100%;
+	top:0;
+	left: 0;
+	height: 0%;
+	background-color: white;
+	opacity: 0.5;
+	transition: 0.2s;
+}
+.overplay2{
+	position: absolute;
+	width: 50%;
+	top:0;
+	left: -50%;
+	height: 100%;
+	background-image: linear-gradient(to right,rgba(255,255,255,0.01),rgba(255,255,255,0.6),rgba(255,255,255,0.01));
+	transition: 1s;
+	-moz-transform: skewX(15deg);
+	-webkit-transform: skewX(15deg);
+	-o-transform: skewX(15deg);
+	-ms-transform: skewX(15deg);
+	transform: skewX(15deg);
+}
+.tamgiac{
+	position: absolute;
+	width: 50%;
+	top:75%;
+	left: -30%;
+	height: 30%;
+	background-color: rgba(255,0,0,0.8);
+	transition: 1s;
+	-moz-transform: skewX(45deg);
+	-webkit-transform: skewX(45deg);
+	-o-transform: skewX(45deg);
+	-ms-transform: skewX(45deg);
+	transform: skewX(45deg);
+	z-index: 2;
+}
+.boxnew:hover .overplay{
+	height: 100%;
+}
+.boxnew:hover .overplay2{
+	left: 120%;
+}
+.banner:hover .tamgiac{
+	width: 120%;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	position: absolute;	
+	height: 60px;
+}
+
+ul li ul{
+	display: none;
+	width: 170px;
+	height: auto;
+
+}
+ul li {
+	display: inline;
+}
+ul li a{
+	display: block;
+	padding: 20px 25px;
+	float: left;
+	text-decoration: none;
+	color: black;
+	font-family: arial;
+	font-weight: bold;
+	position: relative;
+}
+
+ul li a::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0%;
+	border-top: 1px #009 solid;
+	transition: 0.3s;
+
+}
+ul li a:hover::before{
+	width: 100%;
+	left: 0;
+}
+
+ul li a:hover{
+	color : blue;
+	border-bottom: #00F solid;
+}
+/**/
+
+/**/
+nav{
+	float: left;
+	width: 100%;
+	border-bottom: 2px #333 solid;
+	position: relative;
+	height: 	61px;
+}
+ul li:hover ul{
+	display: 	block;
+	position: 	absolute;	
+	top : 62px;
+	z-index: 	3;
+	background-color: 	#EEE;
+}
+ul li ul li a{
+	float: left;
+	display: block;
+	width: 170px;
+	padding: 10px;
+	border-bottom: 1px #999 dotted;
+	font-weight: unset;
+}
+ul li ul li a:hover{
+	
+	border-bottom: 1px #333 dotted;
+}
+li {
+	float: left;
+}
+/* banner hiêu ứng css */
+.bgw{
+	background-color: rgba(255,255,255,0.5);
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: 0.2s;
+	z-index: 1;
+}
+.banner:hover .bgw{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.book{
+	display: block;
+	position: absolute;
+	top: -100px;
+	left: 35%;
+	width: 180px;
+	padding: 20px;
+	font-size: 1.5em;
+	color: #FFF;
+	background-color: #090;
+	border-radius: 10px;
+	text-align: center;
+	z-index: 2;
+	border:1px #0f0 solid;
+	box-shadow: 0px 0px 10px #000;
+	transition: 0.3s;
+}
+.banner:hover .book{
+	display: block;
+	top: 40%;
+}
+.tieude{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 5%;
+	width: 100%;
+	color: #FFF;
+	font-size: 1.5em;
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.03),black);
+	z-index: 3;
+}
+.myicon{
+	color: #FF0;
+	font-size: 16pt;
+}
+/**/
+.box2{
+	float: left;
+	width: 32%;
+}
+.box2 img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.mrpt{
+	margin-right: 2%;
+}
+.mbpt{
+	margin-bottom: 20px;
+}
+/**/
+.danhmuc{
+	float: left;
+	width: 100%;
+	min-height: 50px;
+	position: relative;
+	margin-bottom: 20px;
+	line-height: 40px;
+	padding-left: 20px;
+
+}
+.danhmuc::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 50px;
+	border-top: 1px #090 solid;
+	border-bottom: 1px #090 solid;
+	transition: 0.5s;
+	transform: scaleY(2);
+	opacity: 0;
+}
+.danhmuc:hover::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 50px;
+	border-top: 1px #090 solid;
+	border-bottom: 1px #090 solid;
+	transition: 0.5s;
+	transform: scaleY(1);
+	opacity: 1;
+}
+.danhmuc::after{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 220px;
+	height: 46px;
+	background-color: #090;
+	transition: 0.5s;
+	transform: scaleY(1.5);
+	opacity: 0;
+	z-index: -1;
+}
+.danhmuc:hover::after{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 220px;
+	height: 46px;
+	background-color: #090;
+	transition: 0.5s;
+	transform: scaleY(1);
+	opacity: 1;
+}
+.danhmuc:hover h2{
+	color: #FFF;
+}
